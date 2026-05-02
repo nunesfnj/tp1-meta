@@ -19,7 +19,7 @@ def get_neighbors(solution, bounds, step=0.1):
     return neighbors
 
 
-def tabu_search(objective_function, bounds, max_iter=100, tabu_size=10):
+def tabu_search(objective_function, bounds, max_iter=200, tabu_size=15):
     
     current = random_solution(bounds)
     best = current[:]
